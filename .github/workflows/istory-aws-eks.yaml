@@ -1,3 +1,4 @@
+#1
 name: Java CI with Gradle
 
 on:
@@ -126,6 +127,6 @@ jobs:
           git config --global user.name 'devSjLee'
           git config --global user.email 'tjdwns54522@gmail.com'
           git commit -am "Update image tag to ${{ env.DOCKER_TAG }}"
-          git remote set-url origin https://${{ secrets.PAT }}@github.com/devSjLee/istory-app.git
+          git remote set-url origin https://${{ secrets.PAT }}@github.com/devSjLee/istory-service.git
           
           git push origin main
